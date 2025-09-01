@@ -23,7 +23,6 @@ bookings.booking_date often filtered or ordered by date
 properties.location often filtered in queries
 
 -- File: database-adv-script/database_index.sql
-database_index.sql
 
 -- Index on users.user_id for JOINs
 CREATE INDEX idx_users_user_id ON users(user_id);
