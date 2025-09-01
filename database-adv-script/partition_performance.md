@@ -1,5 +1,14 @@
 # ALX Airbnb Database - Partitioning Large Tables
 
+## Project Structure
+
+alx-airbnb-database/
+│
+└── database-adv-script/
+    ├── partitioning.sql
+    └── partition_performance.md
+
+
 ## Task 5: Partitioning Large Tables
 
 ### Objective
