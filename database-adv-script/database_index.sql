@@ -5,12 +5,14 @@
 -- ===============================
 -- Step 1: Measure query performance BEFORE indexes
 -- ===============================
-EXPLAIN SELECT * 
+EXPLAIN ANALYZE 
+SELECT * 
 FROM bookings b
 JOIN users u ON b.user_id = u.user_id
 WHERE b.booking_date > '2025-01-01';
 
-EXPLAIN SELECT * 
+EXPLAIN ANALYZE 
+SELECT * 
 FROM properties p
 LEFT JOIN reviews r ON p.property_id = r.property_id
 WHERE p.location = 'New York';
@@ -27,12 +29,14 @@ CREATE INDEX idx_properties_location ON properties(location);
 -- ===============================
 -- Step 3: Measure query performance AFTER indexes
 -- ===============================
-ANALYZE SELECT * 
+EXPLAIN ANALYZE 
+SELECT * 
 FROM bookings b
 JOIN users u ON b.user_id = u.user_id
 WHERE b.booking_date > '2025-01-01';
 
-ANALYZE SELECT * 
+EXPLAIN ANALYZE 
+SELECT * 
 FROM properties p
 LEFT JOIN reviews r ON p.property_id = r.property_id
 WHERE p.location = 'New York';
