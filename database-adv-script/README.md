@@ -14,6 +14,13 @@ alx-airbnb-database/
     ├── subqueries.sql    -- Your SQL subqueries
     └── README.md         -- Documentation
 
+alx-airbnb-database/
+│
+└── database-adv-script/
+    ├── aggregations_and_window_functions.sql
+    └── README.md
+
+
 ## Task 0: Write Complex Queries with Joins
 
 ### Objective
